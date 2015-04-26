@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B197964D-21FB-4CDD-B0E8-4C67AB504561}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataLoader</RootNamespace>
+    <AssemblyName>DataLoader</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="GLM\CVOG\CVOGClonedObjectBase.cs" />
+    <Compile Include="GLM\CVOG\CVOGEnterPoint.cs" />
+    <Compile Include="GLM\CVOG\CVOGGraphicsBase.cs" />
+    <Compile Include="GLM\CVOG\CVOGGraphicsPhysicsBase.cs" />
+    <Compile Include="GLM\CVOG\CVOGMapPath.cs" />
+    <Compile Include="GLM\CVOG\CVOGObjectGraphics.cs" />
+    <Compile Include="GLM\CVOG\CVOGOutPost.cs" />
+    <Compile Include="GLM\CVOG\CVOGPhysicsBase.cs" />
+    <Compile Include="GLM\CVOG\CVOGReaction.cs" />
+    <Compile Include="GLM\CVOG\CVOGReactionText.cs" />
+    <Compile Include="GLM\CVOG\CVOGRiverNode.cs" />
+    <Compile Include="GLM\CVOG\CVOGRoadJunction.cs" />
+    <Compile Include="GLM\CVOG\CVOGRoadNode.cs" />
+    <Compile Include="GLM\CVOG\CVOGRoadNodeBase.cs" />
+    <Compile Include="GLM\CVOG\CVOGSpawnPoint.cs" />
+    <Compile Include="GLM\CVOG\CVOGStore.cs" />
+    <Compile Include="GLM\CVOG\CVOGTrigger.cs" />
+    <Compile Include="GLM\Entities\Catalog.cs" />
+    <Compile Include="GLM\Entities\NDW.cs" />
+    <Compile Include="GLM\Entities\Txt.cs" />
+    <Compile Include="GLM\Entities\Xml.cs" />
+    <Compile Include="AssetManager.cs" />
+    <Compile Include="GLM\Entities\SectorMap.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XML\GeneratableCreature.cs" />
+    <Compile Include="XML\HeadBody.cs" />
+    <Compile Include="XML\Achievement.cs" />
+    <Compile Include="XML\Arena.cs" />
+    <Compile Include="XML\BonusData.cs" />
+    <Compile Include="XML\Category.cs" />
+    <Compile Include="XML\Color.cs" />
+    <Compile Include="XML\ConfigCost.cs" />
+    <Compile Include="XML\ConfigNewCharacter.cs" />
+    <Compile Include="XML\Consumable.cs" />
+    <Compile Include="XML\ContinentExploredArea.cs" />
+    <Compile Include="XML\ContinentObject.cs" />
+    <Compile Include="XML\CreatureAI.cs" />
+    <Compile Include="XML\CreatureEnhancement.cs" />
+    <Compile Include="XML\CreatureExperienceLevel.cs" />
+    <Compile Include="XML\DataHolder.cs" />
+    <Compile Include="XML\Discipline.cs" />
+    <Compile Include="XML\ExperienceLevel.cs" />
+    <Compile Include="XML\Faction.cs" />
+    <Compile Include="XML\HeadBodyCharacter.cs" />
+    <Compile Include="XML\HeadDetail.cs" />
+    <Compile Include="XML\ItemTemplate.cs" />
+    <Compile Include="XML\LootBaseItem.cs" />
+    <Compile Include="XML\LootConfig.cs" />
+    <Compile Include="XML\LootRarity.cs" />
+    <Compile Include="XML\LootTable.cs" />
+    <Compile Include="XML\LootWeight.cs" />
+    <Compile Include="XML\MapScaler.cs" />
+    <Compile Include="XML\Module.cs" />
+    <Compile Include="XML\NPCContinentObject.cs" />
+    <Compile Include="XML\NPCDialogueRandom.cs" />
+    <Compile Include="XML\ObjTypeRef.cs" />
+    <Compile Include="XML\Outpost.cs" />
+    <Compile Include="XML\PrefixCreature.cs" />
+    <Compile Include="XML\PrefixWeight.cs" />
+    <Compile Include="XML\QuestBaseCredit.cs" />
+    <Compile Include="XML\QuestCreditsLookup.cs" />
+    <Compile Include="XML\QuestXPLookup.cs" />
+    <Compile Include="XML\RaceSpecificItem.cs" />
+    <Compile Include="XML\RandomDialogue.cs" />
+    <Compile Include="XML\Region.cs" />
+    <Compile Include="XML\RegionBorder.cs" />
+    <Compile Include="XML\RegionFaction.cs" />
+    <Compile Include="XML\RegionMap.cs" />
+    <Compile Include="XML\RemovedObject.cs" />
+    <Compile Include="XML\Result.cs" />
+    <Compile Include="WAD\Entities\CloneBaseArmor.cs" />
+    <Compile Include="WAD\Entities\CloneBaseCharacter.cs" />
+    <Compile Include="WAD\Entities\CloneBaseCommodity.cs" />
+    <Compile Include="WAD\Entities\CloneBaseGadget.cs" />
+    <Compile Include="WAD\Entities\CloneBase.cs" />
+    <Compile Include="WAD\Entities\CloneBaseObject.cs" />
+    <Compile Include="WAD\Entities\CloneBasePowerPlant.cs" />
+    <Compile Include="WAD\Entities\CloneBaseTinkeringKit.cs" />
+    <Compile Include="WAD\Entities\CloneBaseVehicle.cs" />
+    <Compile Include="WAD\Entities\CloneBaseWeapon.cs" />
+    <Compile Include="WAD\Entities\CloneBaseWheelSet.cs" />
+    <Compile Include="WAD\Prefixes\ArmorPrefix.cs" />
+    <Compile Include="WAD\Prefixes\BasePrefix.cs" />
+    <Compile Include="WAD\Prefixes\OrnamentPrefix.cs" />
+    <Compile Include="WAD\Prefixes\PowerPlantPrefix.cs" />
+    <Compile Include="WAD\Prefixes\RaceItemPrefix.cs" />
+    <Compile Include="WAD\Prefixes\VehiclePrefix.cs" />
+    <Compile Include="WAD\Prefixes\WeaponPrefix.cs" />
+    <Compile Include="WAD\Skills\Skill.cs" />
+    <Compile Include="WAD\Interfaces\IReadableStruct.cs" />
+    <Compile Include="WAD\Quests\Quest.cs" />
+    <Compile Include="WAD\Quests\QuestObjective.cs" />
+    <Compile Include="WAD\Skills\SkillElement.cs" />
+    <Compile Include="WAD\Specifics\ArmorSpecific.cs" />
+    <Compile Include="WAD\Specifics\CharacterSpecific.cs" />
+    <Compile Include="WAD\Specifics\CloneBaseSpecific.cs" />
+    <Compile Include="WAD\Specifics\CommoditySpecific.cs" />
+    <Compile Include="WAD\Entities\CloneBaseCreature.cs" />
+    <Compile Include="WAD\Specifics\CreatureSpecific.cs" />
+    <Compile Include="WAD\Structs\DamageArray.cs" />
+    <Compile Include="WAD\Specifics\GadgetSpecific.cs" />
+    <Compile Include="WAD\Specifics\PowerPlantSpecific.cs" />
+    <Compile Include="WAD\Specifics\SimpleObjectSpecific.cs" />
+    <Compile Include="WAD\Specifics\VehicleSpecific.cs" />
+    <Compile Include="WAD\Specifics\WheelSetSpecific.cs" />
+    <Compile Include="WAD\Structs\FrRr.cs" />
+    <Compile Include="WAD\Structs\HeadBody.cs" />
+    <Compile Include="WAD\Structs\HeadDetail.cs" />
+    <Compile Include="WAD\Structs\RGB.cs" />
+    <Compile Include="WAD\Structs\SkillSet.cs" />
+    <Compile Include="WAD\Specifics\TinkeringKitSpecific.cs" />
+    <Compile Include="WAD\Specifics\WeaponSpecific.cs" />
+    <Compile Include="WAD\Structs\Vector3.cs" />
+    <Compile Include="WAD\Structs\VehicleTrick.cs" />
+    <Compile Include="WAD\WADReader.cs" />
+    <Compile Include="XML\StoreInventory.cs" />
+    <Compile Include="XML\Tile.cs" />
+    <Compile Include="XML\TileSet.cs" />
+    <Compile Include="XML\TreasureWeight.cs" />
+    <Compile Include="XML\TypeName.cs" />
+    <Compile Include="XML\VehicleTemplate.cs" />
+    <Compile Include="XML\VersionConfig.cs" />
+    <Compile Include="XML\WeaponGroup.cs" />
+    <Compile Include="XML\WeaponGroupX.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
